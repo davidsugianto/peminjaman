@@ -20,7 +20,6 @@
   <div class="col-md-12">
       <br /><br />
       <h2>Sistem Informasi Peminjaman Alat Laboratorium Sistem Komputer dan Kontrol</h2>
-
        <br />
   </div>
 </div>
