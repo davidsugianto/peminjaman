@@ -28,19 +28,27 @@
         <div class="col-md-4 col-md-offset-4 col-sm-6 col-sm-offset-3 col-xs-10 col-xs-offset-1">
     <div class="panel panel-default">
         <div class="panel-heading">
-    <strong>   Massukkan Nim dan Password </strong>  
+    <strong>   Masukkan Nim dan Password </strong>  
         </div>
         <div class="panel-body">
-              <form role="form" method="post">
+              <form role="form" method="post" action="<?php echo base_url('index.php/login/login');?>">
                    <br />
                   <div class="form-group input-group">
                         <span class="input-group-addon"><i class="fa fa-tag"  ></i></span>
-                        <input type="text" class="form-control" placeholder="Your Nim " name="NIM" />
+                        <input type="text" class="form-control" placeholder="Your Nim " autofocus name="NIM" />
                     </div>
                   <div class="form-group input-group">
                         <span class="input-group-addon"><i class="fa fa-lock"  ></i></span>
                         <input type="password" class="form-control" placeholder="Your Password" name="PASSWORD" />
                   </div>
+				  <!--<div class="form-group input-group">
+                        <span class="input-group-addon"><i class="fa fa-info"  ></i></span>
+						<select name="akses_level" class="form-control">
+						<option>akses level</option>
+						<option value="Admin">Admin</option>
+						<option value="User">User</option>
+						</select>
+                  </div>-->
                   <div class="form-group">
                         <span class="pull-right">
                                <a href="#" >Forget password ? </a> 

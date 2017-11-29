@@ -2,7 +2,9 @@
 defined('BASEPATH') OR exit('No direct script access allowed');
 
 class User_model extends CI_Model {
-
+public $NIM;
+public $PASSWORD;
+public $AKSES_LEVEL;
 	public function __construct()
 	{
 		parent::__construct();
@@ -44,7 +46,12 @@ class User_model extends CI_Model {
 		$this->db->where('NIM',$data['NIM']);
 		$this->db->delete('MAHASISWA',$data);
 	}
-
+	//fungsi login user
+	public function cek($NIM,$PASSWORD){
+		$this->db->where('NIM', $NIM);
+		$this->db->where('PASSWORD', $PASSWORD);
+		return $this->db->get('MAHASISWA');
+	}
 }
 
 /* End of file User_model.php */
