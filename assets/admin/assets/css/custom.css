@@ -42,7 +42,7 @@ body {
     border:1px solid #f3f3f3;
 }
 h2 {
-    color: #f00;
+    color: pink;
 }
 h4 {
     padding-top:10px;
@@ -104,7 +104,7 @@ background-color: #A95DF0;
 color: #fff;
 }
   .bg-color-red {
-background-color: #DB0630;
+background-color: #FF007F;
 color: #fff;
 }
   .bg-color-brown {
