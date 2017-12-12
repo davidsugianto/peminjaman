@@ -8,6 +8,9 @@ class Informasi extends CI_Controller {
 	{
 		parent::__construct();
 		$this->load->model('informasi_model');
+		if($this->session->userdata('STATUS') != "login"){
+			redirect(base_url("index.php/Login"));
+		}
 	}
 
 	//halaman utama informasi alat

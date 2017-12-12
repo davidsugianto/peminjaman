@@ -11,6 +11,9 @@ class Laporan extends CI_Controller {
 		$this->load->model('informasi_model');
 		$this->load->model('user_model');
 		$this->load->model('konfigurasi_model');
+		if($this->session->userdata('STATUS') != "login"){
+			redirect(base_url("index.php/Login"));
+		}
 	}
 
 	public function index()

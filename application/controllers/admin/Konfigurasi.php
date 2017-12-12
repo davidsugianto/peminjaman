@@ -7,13 +7,9 @@ class Konfigurasi extends CI_Controller {
 	{
 		parent::__construct();
 		$this->load->model('konfigurasi_model');
-
-		//halaman konfigurasi hanya boleh diakses oleh admin
-		/*if ($this->session->userdata('AKSES_LEVEL') != 'Admin') {
-			$this->session->flashdata('sukses','Oops... anda bukan admin');
-			redirect(base_url('login'),'refresh');
-		}*/
-		//end proteksi
+		if($this->session->userdata('STATUS') != "login"){
+		redirect(base_url("index.php/Login"));
+		}
 	}
 
 	public function index()

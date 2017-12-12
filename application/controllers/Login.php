@@ -39,6 +39,7 @@ class Login extends CI_Controller {
 				$sess_data['NIM'] = $data->NIM;
 				$sess_data['NAMA_MAHASISWA'] = $data->NAMA_MAHASISWA;
 				$sess_data['AKSES_LEVEL'] = $data->AKSES_LEVEL;
+				$sess_data['STATUS'] = 'login';
 				$this->session->set_userdata($sess_data);
 			}
 

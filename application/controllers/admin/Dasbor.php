@@ -7,6 +7,9 @@ class Dasbor extends CI_Controller {
 	{
 		parent::__construct();
 		$this->load->model('user_model');
+		if($this->session->userdata('STATUS') != "login"){
+			redirect(base_url("index.php/Login"));
+		}
 	}
 
 	//homepage
