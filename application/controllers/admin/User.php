@@ -44,7 +44,7 @@ class User extends CI_Controller {
 						  'NAMA_MAHASISWA' 	=> $i->post('NAMA_MAHASISWA'),
 						  'PRODI' 			=> $i->post('PRODI'),
 						  'JURUSAN' 		=> $i->post('JURUSAN'),
-						  'PASSWORD' 		=> sha1($i->post('PASSWORD')),
+						  'PASSWORD' 		=> md5($i->post('PASSWORD')),
 						  'AKSES_LEVEL' 	=> $i->post('AKSES_LEVEL')
 						 );
 			$this->user_model->tambah($data);
@@ -80,7 +80,7 @@ class User extends CI_Controller {
 							  'NIM' 			=> $i->post('NIM'),
 							  'PRODI' 			=> $i->post('PRODI'),
 							  'JURUSAN' 		=> $i->post('JURUSAN'),
-							  'PASSWORD' 		=> sha1($i->post('PASSWORD')),
+							  'PASSWORD' 		=> md5($i->post('PASSWORD')),
 							  'AKSES_LEVEL' 	=> $i->post('AKSES_LEVEL')
 							 );
 

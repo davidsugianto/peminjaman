@@ -11,8 +11,18 @@ class Login extends CI_Controller {
 	//halaman Login
 	public function index()
 	{
+		if($this->session->userdata('AKSES_LEVEL') == 'Admin')
+		{
+		redirect('admin/Dasbor');
+		}	
+		elseif($this->session->userdata('AKSES_LEVEL') == 'User')
+		{
+		redirect('public/Dasbor');
+		}
+		else{
 		$data = array('title' => 'Login');
 		$this->load->view('admin/login_view', $data, FALSE);
+		}
 	}	
 	
 	public function login(){

@@ -55,7 +55,7 @@
                   </div>
                   <input type="submit" name="submit" class="btn btn-primary btn-lg" value="Login Now">
                 <hr />
-                Not Register ? <a href="<?php echo base_url('index.php/admin/register_view') ?>" >Klik disini </a>
+                Not Register ? <a href="<?php echo base_url('index.php/register') ?>" >Klik disini </a>
             </form>
         </div>
        

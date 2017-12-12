@@ -13,7 +13,7 @@ padding: 15px 50px 5px 50px;
 float: right;
 font-size: 16px;"> <?php echo date('d M Y') ?> &nbsp; 
 
-<a href="<?php echo base_url('public/dasbor/profile') ?>" class="btn btn-success square-btn-adjust"><i class="fa fa-user"></i> User Login </a> 
+<a href="<?php echo base_url('index.php/public/dasbor/profile') ?>" class="btn btn-success square-btn-adjust"><i class="fa fa-user"></i><?php echo $this->session->userdata('NAMA_MAHASISWA');?></a> 
 
 <a href="<?php echo base_url() ?>" class="btn btn-primary square-btn-adjust"><i class="fa fa-home"></i> Homepage </a> 
 
