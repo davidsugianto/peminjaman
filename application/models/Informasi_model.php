@@ -12,8 +12,17 @@ class Informasi_model extends CI_Model {
 	public function listing()
 	{
 		$this->db->select('*');
-		$this->db->from('ALAT');
+		$this->db->from('alat');
 		$this->db->order_by('NAMA_ALAT','DECS');
+		$query = $this->db->get();
+		return $query->result();
+	}
+    //fungsi listing tugas akhir
+	public function listing_TA()
+	{
+		$this->db->select('*');
+		$this->db->from('tugas_akhir');
+		$this->db->order_by('JUDUL_TUGAS_AKHIR','DECS');
 		$query = $this->db->get();
 		return $query->result();
 	}

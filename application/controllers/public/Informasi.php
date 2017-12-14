@@ -8,9 +8,8 @@ class Informasi extends CI_Controller {
 		$data = array('title' => 'Halaman Informasi Tugas Akhir', 'isi' => 'public/informasi/tugasakhir');
 		$this->load->view('public/layout/wrapper', $data, FALSE);
 	}
-	public function alat()
-	{
-		$data = array('title' => 'Halaman Informasi Alat', 'isi' => 'public/informasi/alat');
-		$this->load->view('public/layout/wrapper', $data, FALSE);
-	}
+	$alat = $this->informasi_model->listing();
+
+		$data = array('title' => 'Data Alat ('.count($alat).')', 'alat' => $alat, 'isi' => 'admin/informasi/list');
+		$this->load->view('public/index.php/coba/wrapper', $data, FALSE);
 }

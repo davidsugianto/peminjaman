@@ -34,11 +34,11 @@
                    <br />
                   <div class="form-group input-group">
                         <span class="input-group-addon"><i class="fa fa-tag"  ></i></span>
-                        <input type="text" class="form-control" placeholder="Your Nim " autofocus name="NIM" />
+                        <input type="text" class="form-control" placeholder=" Nim " autofocus name="NIM" />
                     </div>
                   <div class="form-group input-group">
                         <span class="input-group-addon"><i class="fa fa-lock"  ></i></span>
-                        <input type="password" class="form-control" placeholder="Your Password" name="PASSWORD" />
+                        <input type="password" class="form-control" placeholder=" Password " name="PASSWORD" />
                   </div>
 				  <!--<div class="form-group input-group">
                         <span class="input-group-addon"><i class="fa fa-info"  ></i></span>
@@ -50,16 +50,16 @@
                   </div>-->
                   <div class="form-group">
                         <span class="pull-right">
-                               <a href="#" >Forget password ? </a> 
+                               <a href="#" >Lupa Password ? </a> 
                         </span>
                   </div>
                   <input type="submit" name="submit" class="btn btn-primary btn-lg" value="Login Now">
                 <hr />
-                Not Register ? <a href="<?php echo base_url('index.php/admin/register_view') ?>" >Klik disini </a>
+                <center> Not Register ? <a href="<?php echo base_url('index.php/admin/register_view') ?>" >Klik disini </a></center>
             </form>
         </div>
        
-    <v /div>
+    </div>
 </div>
 
 </div>
