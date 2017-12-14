@@ -36,26 +36,31 @@
 	<label>Nim</label>
 	<input type="text" name="NIM" class="form-control" placeholder="nim" autofocus required>
 	</div>
+	<br>
 
 	<div class="form-group">
 	<label>Nama</label>
 	<input type="text" name="NAMA_MAHASISWA" class="form-control" placeholder="nama" required>
 	</div>
+	<br>
 
 	<div class="form-group">
 	<label>Program Studi</label>
 	<input type="text" name="PRODI" class="form-control" placeholder="program studi" required>
 	</div>
+	<br>
 		
 	<div class="form-group">
 	<label>Jurusan</label>
 	<input type="text" name="JURUSAN" class="form-control" placeholder="jurusan" required>
 	</div>
-
+	<br>
+	
 	<div class="form-group">
 	<label>Password</label>
 	<input type="password" name="PASSWORD" class="form-control" placeholder="password" required>
 	</div>
+	<br>
 
 	<div class="form-group">
 	<label>Level Hak akses</label>
@@ -64,10 +69,11 @@
 		<option value="User">User</option>
 		</select>
 	</div>
+	<br>
 		
 	<input type="submit" name="submit" class="btn btn-success btn-lg" value="Simpan Data">
 	<input type="reset" name="reset" class="btn btn-default btn-lg" value="Reset ">
-	</div>
+	</diqv>
 	</div>
 </div>
 </div>

@@ -11,8 +11,18 @@ class Login extends CI_Controller {
 	//halaman Login
 	public function index()
 	{
+		if($this->session->userdata('AKSES_LEVEL') == 'Admin')
+		{
+		redirect('admin/Dasbor');
+		}	
+		elseif($this->session->userdata('AKSES_LEVEL') == 'User')
+		{
+		redirect('public/Dasbor');
+		}
+		else{
 		$data = array('title' => 'Login');
 		$this->load->view('admin/login_view', $data, FALSE);
+		}
 	}	
 	
 	public function login(){
@@ -29,6 +39,7 @@ class Login extends CI_Controller {
 				$sess_data['NIM'] = $data->NIM;
 				$sess_data['NAMA_MAHASISWA'] = $data->NAMA_MAHASISWA;
 				$sess_data['AKSES_LEVEL'] = $data->AKSES_LEVEL;
+				$sess_data['STATUS'] = 'login';
 				$this->session->set_userdata($sess_data);
 			}
 

@@ -8,6 +8,9 @@ class User extends CI_Controller {
 	{
 		parent::__construct();
 		$this->load->model('user_model');
+		if($this->session->userdata('STATUS') != "login"){
+			redirect(base_url("index.php/Login"));
+		}
 	}
 
 	//halaman utama data user
@@ -44,7 +47,7 @@ class User extends CI_Controller {
 						  'NAMA_MAHASISWA' 	=> $i->post('NAMA_MAHASISWA'),
 						  'PRODI' 			=> $i->post('PRODI'),
 						  'JURUSAN' 		=> $i->post('JURUSAN'),
-						  'PASSWORD' 		=> sha1($i->post('PASSWORD')),
+						  'PASSWORD' 		=> md5($i->post('PASSWORD')),
 						  'AKSES_LEVEL' 	=> $i->post('AKSES_LEVEL')
 						 );
 			$this->user_model->tambah($data);
@@ -80,7 +83,7 @@ class User extends CI_Controller {
 							  'NIM' 			=> $i->post('NIM'),
 							  'PRODI' 			=> $i->post('PRODI'),
 							  'JURUSAN' 		=> $i->post('JURUSAN'),
-							  'PASSWORD' 		=> sha1($i->post('PASSWORD')),
+							  'PASSWORD' 		=> md5($i->post('PASSWORD')),
 							  'AKSES_LEVEL' 	=> $i->post('AKSES_LEVEL')
 							 );
 
