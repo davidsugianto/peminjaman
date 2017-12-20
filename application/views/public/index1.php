@@ -61,8 +61,8 @@
 
         <h1>Selamat Datang di LAB Sistem Komputer dan Kontrol</h1>
         <div class="actions">
-          <a href="#about" class="btn-get-started">Get Strated</a>
-          <a href="#services" class="btn-services">Our Services</a>
+          <a href="#about" class="btn-get-started">Beranda</a>
+          <a href="#services" class="btn-services">Fasilitas</a>
         </div>
       </div>
     </div>
@@ -229,7 +229,7 @@
       <div class="row">
         <div class="col-md-9">
           <div class="quote">
-            <b><img src="img/quote_sign_left.png" alt=""></b> Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis architecto beatae. <small><img src="img/quote_sign_right.png" alt=""></small>
+            <b><img src="img/quote_sign_left.png" alt=""></b> Selalu lihat masalah dari 3 sudut pandang, dari caraku menghadapi itu sebagai orang pertama, dari lawanku sebagai orang kedua dan dari cara mereka melihat "kami" sebagai orang ketiga.  <small><img src="img/quote_sign_right.png" alt=""></small>
           </div>
         </div>
         <div class="col-md-3">
