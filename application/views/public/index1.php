@@ -288,7 +288,7 @@
     <div class="container wow fadeInUp">
       <div class="row">
         <div class="col-md-12">
-          <h3 class="section-title">Daftar ALat</h3>
+          <h3 class="section-title">Daftar Alat</h3>
  <table class="table table-striped table-bordered table-hover" id="dataTables-example">
 	<thead>
 	    <tr>
