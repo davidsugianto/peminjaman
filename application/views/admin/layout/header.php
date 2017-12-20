@@ -15,7 +15,7 @@ font-size: 16px;"> <?php echo date('d M Y') ?> &nbsp;
 
 <a href="<?php echo base_url('index.php/admin/dasbor/profile') ?>" class="btn btn-success square-btn-adjust"><i class="fa fa-user"></i><?php echo $this->session->userdata('NAMA_MAHASISWA');?> </a> 
 
-<a href="<?php echo base_url() ?>" class="btn btn-primary square-btn-adjust"><i class="fa fa-home"></i> Homepage </a> 
+<a href="<?php echo base_url('index.php/homepage') ?>" class="btn btn-primary square-btn-adjust"><i class="fa fa-home"></i> Homepage </a> 
 
 <a href="<?php echo base_url('index.php/login/logout') ?>" class="btn btn-danger square-btn-adjust"><i class="fa fa-sign-out"></i> Logout </a> 
   </div>
