@@ -17,7 +17,7 @@ class Login extends CI_Controller {
 		}	
 		elseif($this->session->userdata('AKSES_LEVEL') == 'User')
 		{
-		redirect('public/Dasbor');
+		redirect('public/Dasbor/profile');
 		}
 		else{
 		$data = array('title' => 'Login');
@@ -49,7 +49,7 @@ class Login extends CI_Controller {
 			}	
 			elseif($this->session->userdata('AKSES_LEVEL') == 'User')
 			{
-				redirect('public/Dasbor');
+				redirect('public/Dasbor/profile');
 			}
 		}else{
 		?>

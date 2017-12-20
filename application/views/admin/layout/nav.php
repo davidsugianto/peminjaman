@@ -28,10 +28,22 @@
                     <a href="<?php echo base_url('index.php/admin/informasi/tambah_tugasakhir') ?>">Tambah Tugas Akhir</a>
                 </li>
             </ul>
-        </li> 
+        </li>
         <li>
+            <a href="#"><i class="fa fa-area-chart"></i> Peminjaman<span class="fa arrow"></span></a>
+            <ul class="nav nav-second-level">
+                <li>
+                    <a href="<?php echo base_url('index.php/admin/laporan') ?>">Data Peminjaman Alat</a>
+                    <a href="<?php echo base_url('index.php/admin/laporan/tambah') ?>">Peminjaman alat</a>
+                </li>
+            </ul>
+        </li>
+        <li>
+            <a  href="<?php echo base_url('index.php/admin/konfigurasi') ?>"><i class="fa fa-wrench"></i> Konfigurasi Website</a>
+        </li> 
+        <!---<li>
             <a href="<?php echo base_url('index.php/admin/laporan') ?>"><i class="fa fa-area-chart"></i> Laporan</a>
-        </li> 	
+        </li> -->	
 </ul>
 </div>
 
